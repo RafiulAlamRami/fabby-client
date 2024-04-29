@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 
 const AllArtAndCraftItem = () => {
 
@@ -33,7 +33,7 @@ const AllArtAndCraftItem = () => {
                                 <th>{allArt.itemName}</th>
                                 <td>{allArt.shortDescription}</td>
                                 <td>{allArt.rating}</td>
-                                <td><button className='btn'>Details</button></td>
+                                <td><Link to={`/craftDetails/${allArt._id}`}><button className='btn'>Details</button></Link></td>
                             </tr>
                             </>)
                         }

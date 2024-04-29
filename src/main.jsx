@@ -22,6 +22,7 @@ import AddCraftItem from './Components/AddCraftItem.jsx';
 import MyArtAndCraftList from './Components/MyArtAndCraftList.jsx';
 import PrivateRoute from './Components/PrivateRoute.jsx';
 import DetailsCraftItemSection from './Components/DetailsCraftItemSection.jsx';
+import CraftDetails from './Components/CraftDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -59,6 +60,11 @@ const router = createBrowserRouter([
         path:'/craftItemviewDetails/:id',
         element:<PrivateRoute><DetailsCraftItemSection></DetailsCraftItemSection></PrivateRoute>,
         loader:({params})=>fetch(`https://fabby-server.vercel.app/craftItemviewDetails/${params.id}`)
+      },
+      {
+        path:'/craftDetails/:id',
+        element:<PrivateRoute><CraftDetails></CraftDetails></PrivateRoute>,
+        loader:({params})=>fetch(`https://fabby-server.vercel.app/craftDetails/${params.id}`)
       }
     ]
   },
