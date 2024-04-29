@@ -35,7 +35,9 @@ const router = createBrowserRouter([
       },
       {
         path:'/allArtAndCraftItems',
-        element:<AllArtAndCraftItem></AllArtAndCraftItem>
+        element:<AllArtAndCraftItem></AllArtAndCraftItem>,
+        loader:()=>fetch('http://localhost:5000/allArtAndCraftItems')
+        
       },
       {
         path:'/login',
@@ -56,7 +58,7 @@ const router = createBrowserRouter([
       {
         path:'/craftItemviewDetails/:id',
         element:<PrivateRoute><DetailsCraftItemSection></DetailsCraftItemSection></PrivateRoute>,
-        loader:({params})=>fetch(`http://localhost:5000/craftItemviewDetails/${params.id}`)
+        loader:({params})=>fetch(`https://fabby-server.vercel.app/craftItemviewDetails/${params.id}`)
       }
     ]
   },

@@ -25,7 +25,7 @@ const AddCraftItem = () => {
 
         console.log(addCraftData);
 
-        fetch('http://localhost:5000/addCraftItem',{
+        fetch('https://fabby-server.vercel.app/addCraftItem',{
             method:'POST',
             headers:{
                 'content-type':'application/json'

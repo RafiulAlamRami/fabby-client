@@ -7,7 +7,7 @@ const CraftItemSection = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/craftItemSection', {
+        fetch('https://fabby-server.vercel.app/craftItemSection', {
             method: 'GET',
             headers: {
                 'content-type': 'application/json'
