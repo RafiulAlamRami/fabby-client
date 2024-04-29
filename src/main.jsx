@@ -36,7 +36,7 @@ const router = createBrowserRouter([
       {
         path:'/allArtAndCraftItems',
         element:<AllArtAndCraftItem></AllArtAndCraftItem>,
-        loader:()=>fetch('http://localhost:5000/allArtAndCraftItems')
+        loader:()=>fetch('https://fabby-server.vercel.app/allArtAndCraftItems')
         
       },
       {
