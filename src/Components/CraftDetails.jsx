@@ -37,7 +37,7 @@ const CraftDetails = () => {
                     </div>
                 </div>
             </div> */}
-
+            <h1 className="text-[2rem] font-bold my-[3em] text-center">Detailes of <span className='border-b-2 border-b-black pb-[.3em]'>{crafts.itemName}</span></h1>
             <div className="hero min-h-screen bg-base-200">
                 <div className="rounded-lg hero-content flex-col md:flex-row lg:flex-row justify-between border-4 gap-[3em]">
                     <div>
