@@ -19,7 +19,8 @@ const CategoryCraft = () => {
     return (
         <div>
             <div>
-                <h1 className='text-[1.5rem] text-center'>Art and Craft Categories</h1>
+                <h1 className='text-[2rem] text-center font-bold font-lex my-[1em]'>Art and Craft Categories</h1>
+                <p className='text-[1.3rem] text-center font font-semibold font-lex mb-[3.5em]'>Dive into our textile art and craft categories, curated to inspire creativity and elevate <br />everyday living with unique, handcrafted pieces</p>
             </div>
             <div className='lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 grid grid-cols-1 gap-[.5em]'>
                 {

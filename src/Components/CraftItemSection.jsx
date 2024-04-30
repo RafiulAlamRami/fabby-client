@@ -26,7 +26,8 @@ const CraftItemSection = () => {
     return (
         <div className='my-[4em]'>
             <div>
-                <h1 className='text-[2rem] text-center'>Craft Item Section</h1>
+                <h1 className='text-[2rem] text-center font-bold font-lex my-[1em]'><span>Craft Items</span></h1>
+                <p className='text-[1.3rem] text-center font font-semibold font-lex mb-[3.5em]'>Experience the magic of textile artistry with our handcrafted pieces, each infused <br />with creativity, tradition, and timeless elegance.</p>
             </div>
             <div className='flex justify-center'>
             <div className='lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 grid grid-cols-1 gap-[.5em]'>
