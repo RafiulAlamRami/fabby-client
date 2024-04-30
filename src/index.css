@@ -114,3 +114,15 @@ button:focus-visible {
 .slide3{
   background-image: url('../src/assets/Beadwork5.jpg');
 }
+
+/* .foot{
+  display: grid;
+  grid-template-columns: 1fr;
+} */
+
+@media screen and (max-width:650px) {
+  .foot{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
