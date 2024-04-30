@@ -19,7 +19,7 @@ const CategoryCraft = () => {
     return (
         <div>
             <div>
-                <h1 className='text-[1.5rem] text-center'>Category Craft Section</h1>
+                <h1 className='text-[1.5rem] text-center'>Art and Craft Categories</h1>
             </div>
             <div className='lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 grid grid-cols-1 gap-[.5em]'>
                 {
