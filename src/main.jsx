@@ -23,6 +23,8 @@ import MyArtAndCraftList from './Components/MyArtAndCraftList.jsx';
 import PrivateRoute from './Components/PrivateRoute.jsx';
 import DetailsCraftItemSection from './Components/DetailsCraftItemSection.jsx';
 import CraftDetails from './Components/CraftDetails.jsx';
+import UpdateCraft from './Components/UpdateCraft.jsx';
+import SubCategoryCraft from './Components/SubCategoryCraft.jsx';
 
 const router = createBrowserRouter([
   {
@@ -65,6 +67,17 @@ const router = createBrowserRouter([
         path:'/craftDetails/:id',
         element:<PrivateRoute><CraftDetails></CraftDetails></PrivateRoute>,
         loader:({params})=>fetch(`https://fabby-server.vercel.app/craftDetails/${params.id}`)
+      },
+      {
+        path:'/updateCraft/:id',
+        element:<PrivateRoute><UpdateCraft></UpdateCraft></PrivateRoute>,
+        loader:({params})=>fetch(`https://fabby-server.vercel.app/updateCraft/${params.id}`)
+        // loader:({params})=>fetch(`https://fabby-server.vercel.app/updateCraft/${params.id}`)
+      },
+      {
+        path:'/subCategoryCraft/:id',
+        element:<PrivateRoute><SubCategoryCraft></SubCategoryCraft></PrivateRoute>,
+        loader:({params})=>fetch(`https://fabby-server.vercel.app/subCategoryCraft/${params.id}`)
       }
     ]
   },
