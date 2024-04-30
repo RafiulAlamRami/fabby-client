@@ -4,7 +4,7 @@
 
 ## Usages of npm packages
 
--  React Hook form : In this website i used React Hook form npm package in user regirter form.
+-  React Hook form : In this website i used React Hook form npm package in user regisrter form.
 -  Swiper slider : In this website i used  Swiper slider npm package For slide image in home page.
 -  React-simple-typewriter : In this website i used  React-simple-typewriter npm package in slider content.
    
