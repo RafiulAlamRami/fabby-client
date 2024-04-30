@@ -137,7 +137,7 @@ const AddCraftItem = () => {
                         </div>
                         {/* Submit Button */}
                         <div>
-                            <input type="submit" value="Add" className='font-lex text-[2rem] font-bold btn btn-block'/>
+                            <input type="submit" value="Add" className='font-lex text-[2rem] font-bold btn btn-block btn-neutral  text-white'/>
                         </div>
                     
                     </form>
