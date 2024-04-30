@@ -17,7 +17,7 @@ const CategoryCraft = () => {
 
     console.log(crafts);
     return (
-        <div>
+        <div className='my-[5em]'>
             <div>
                 <h1 className='text-[2rem] text-center font-bold font-lex my-[1em]'>Art and Craft Categories</h1>
                 <p className='text-[1.3rem] text-center font font-semibold font-lex mb-[3.5em]'>Dive into our textile art and craft categories, curated to inspire creativity and elevate <br />everyday living with unique, handcrafted pieces</p>
@@ -35,11 +35,11 @@ const CategoryCraft = () => {
                                     </div>
                                     <div className="space-y-2">
 
-                                        <h3 className="text-[1.7rem] font-lex font-semibold ">{craft.
-                                        short_description}</h3>
+                                        <h3 className="text-[1.7rem] font-lex font-semibold "><span className='font-extrabold'>Subcategory :</span> {craft.
+                                        subcategory_name}</h3>
 
                                         <div className='flex justify-around text-[1.1rem] font-semibold text-[#131313b2]'>
-                                            <p><span className='font-lex font-extrabold text-[#1313137f]'>SubCategory : </span> {craft.subcategory_name}</p>
+                                            <p><span className='font-lex font-extrabold text-[#1313137f]'>Name : </span> {craft.item_name}</p>
                                             <p>Stock Status : {craft.stock_status}</p>
                                         </div>
                                         <div>
