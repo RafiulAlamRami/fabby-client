@@ -3,11 +3,12 @@ import { useLoaderData } from 'react-router-dom';
 
 const CraftDetails = () => {
 
-    const crafts=useLoaderData()
+    const crafts = useLoaderData()
     console.log(crafts);
     return (
         <div>
-            <div className="p-5 mx-auto sm:p-10 md:p-16 dark:bg-gray-100 dark:text-gray-800">
+
+            {/* <div className="p-5 mx-auto sm:p-10 md:p-16 dark:bg-gray-100 dark:text-gray-800">
                 <div className="flex flex-col max-w-[90%]  mx-auto overflow-hidden rounded">
                     <img src={crafts.photo} alt="" className="w-full h-[75vh] dark:bg-gray-500 rounded-xl" />
                     <div className='flex justify-center'>
@@ -35,7 +36,35 @@ const CraftDetails = () => {
                         </div>  
                     </div>
                 </div>
+            </div> */}
+
+            <div className="hero min-h-screen bg-base-200">
+                <div className="rounded-lg hero-content flex-col md:flex-row lg:flex-row justify-between border-4 gap-[3em]">
+                    <div>
+                    <img src={crafts.photo} className="max-w-3xl rounded-lg shadow-2xl" />
+                    </div>
+                    <div className='text-center'>
+                        <h1 className="text-[2rem] font-bold border-b-2 pb-[1em]">{crafts.
+                            itemName}</h1>
+                        <p className="py-6 text-[1.4rem] font-bold border-b-2 pb-[1em]">{crafts.shortDescription}</p>
+                        <div className='border-l-2 my-[3em]'>
+                            <div className='flex justify-around text-[1.1rem] font-semibold text-[#131313b2]'>
+                                <p><span className='font-lex font-extrabold text-[#1313137f]'>SubCategory : </span> {crafts.subCategory}</p>
+                                <p>Stock Status : {crafts.stockStatus}</p>
+                            </div>
+                            <div className='my-[.6em] flex justify-around text-[1.3rem] font-semibold text-[#131313b2]'>
+                                <p><span className='font-lex font-extrabold text-[#1313137f]'>Price : </span> {crafts.price}</p>
+                                <p>Rating : {crafts.rating}</p>
+                            </div>
+                            <div className='flex justify-around text-[1.3rem] font-semibold text-[#131313b2]'>
+                                <p><span className='font-lex font-extrabold text-[#1313137f]'>Cutomization : </span> {crafts.customization}</p>
+                                <p>time : {crafts.time}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
     );
 };
